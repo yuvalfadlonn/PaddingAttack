@@ -48,15 +48,6 @@ def encryptText(plainText, key, iv):
     
 
 def startImplement(iv, key, cipherText):
-    # #padded the sentence with zero's to suit for a multiplation of 8
-
-    # #created a list of 0x00 * 8 bytes
-    # iv = bytes([0] * DES.block_size)
-
-    # #implement the CBC Mode
-    # encryptionFunc = DES.new(key, DES.MODE_CBC, iv = iv)
-
-    # cipher = encryptionFunc.encrypt(paddedSen)
 
     numBlocks = len(cipherText) // DES.block_size  
 
